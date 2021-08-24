@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #232425;
+  color: #ccc;
+  user-select: none;
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+
+}
+
+.topBlock {
+  float: left;
+  margin-right: 30px;
+}
+canvas {
+  min-width: 500px;
+  max-height: 100vh;
+  /*width: 100%;*/
+  display: inline-block;
+  background: url('assets/fon0.jpg');
+  background-size: 100%;
+}
+
+.bottomBlock {
+  display: flex;
+  max-width: 500px;
+  justify-content: flex-start;
+
+}
+.maxWidth {
+  width: 100px;
+  height: 70px;
+}
+.inform {
+  margin-bottom: 2px;
+  margin-top: 2px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  flex-wrap: wrap;
+}
+.info, .name-field, .time {
+  display: inline-block;
+  border: 1px solid #333;
+  padding: 5px 10px;
+  border: 1px solid #444;
+  border-bottom: 0;
+  margin: 0;
+  color: #ccc;
+
+}
+.info {
+  min-width: 55px;
+}
+.time {
+  min-width: 50px;
+}
+.start, .exit, .mute, .nextlvl {
+  padding: 5px;
+}
+.alltimes {
+  margin-right: 15px;
+}
+.times, .timesRecTitle {
+  margin-top: 5px;
+  text-align: center;
+  display: none;
+}
+.name {
+  background: #232425;
+  width: 100px;
+  height: 27px;
+  color: #ccc;
+  border: 1px solid #444;
+  text-align: center;
+}
+.name:invalid {
+  border: 1px solid red;
+}
+.table-records, .bestTimes {
+  min-width: 180px; 
+  padding: 5px;
+  display: inline-block;
+  margin-top: 7px;
+  line-height: 25px;
+  border: 1px solid #aaa;
+
+}
+.rec-prob {
+  width: 100%;
+  height: 1px;
+  background: #60605d;
+  margin-top: 2px;
+}
+.sec11 {
+  color: #d80056;
+  display: inline-block;
+  float: right;
+  background: #ccc;
+  width: 45%;
+  padding: 5px;
+  text-align: right;
+  white-space: nowrap;
+}
+.name11 {
+  color: #007630;
+  display: inline-block;
+  float: left;
+  background: #ccc;
+  width: 55%;
+  padding: 5px;
+  white-space: nowrap;
+}
+.rec-tab {
+  display: flex;
+  border-bottom: 1px dotted #ccc
+}
+
+@media (max-width: 1000px) {
+  .topBlock {
+    float: none;
+  }
+  .bottomBlock {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 600px) {
+  canvas {
+    min-width: 0;
+  }
+}
+@media (max-width: 430px) {
+  .name11, .sec11 {
+    font-size: 13px;
+  }
+  .table-records, .bestTimes {
+    min-width: 135px;
+  }
+}
+.lic-mus {
+  position: relative;
+  top: -30px;
+  background: rgba(0,0,0,0.7);
+  display: inline-block;
+  padding: 5px;
+  font-size: 13px;
+}
+.lic-mus a{
+  color: #17aa52;
+}
